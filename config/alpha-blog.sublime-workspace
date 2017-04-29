@@ -3,10 +3,41 @@
 	{
 		"selected_items":
 		[
+			[
+				"col",
+				"col-sm-2"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/jeantovar/RubyWS/alpha-blog/app/views/articles/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 1240,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jeantovar/RubyWS/alpha-blog/app/views/articles/edit.html.erb",
+			"settings":
+			{
+				"buffer_size": 60,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jeantovar/RubyWS/alpha-blog/app/views/articles/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 66,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -15,18 +46,40 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "",
+		"height": 367.0,
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Insta",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 530.0
+		"width": 467.0
 	},
 	"console":
 	{
 		"height": 139.0,
 		"history":
 		[
+			"Install Package",
+			"install",
+			"install package emmet",
+			"install package",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"install package emmet",
+			"install packege emmet",
+			"install package",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"install",
 			"rake routes"
 		]
 	},
@@ -42,13 +95,15 @@
 	"expanded_folders":
 	[
 		"/Users/jeantovar/RubyWS/alpha-blog",
+		"/Users/jeantovar/RubyWS/alpha-blog/app",
 		"/Users/jeantovar/RubyWS/alpha-blog/app/controllers",
-		"/Users/jeantovar/RubyWS/alpha-blog/app/controllers/concerns",
-		"/Users/jeantovar/RubyWS/alpha-blog/app/models",
-		"/Users/jeantovar/RubyWS/alpha-blog/app/views"
+		"/Users/jeantovar/RubyWS/alpha-blog/app/views",
+		"/Users/jeantovar/RubyWS/alpha-blog/app/views/articles"
 	],
 	"file_history":
 	[
+		"/Users/jeantovar/RubyWS/alpha-blog/app/controllers/application_controller.rb",
+		"/Users/jeantovar/RubyWS/alpha-blog/app/views/articles/edit.html.erb",
 		"/Users/jeantovar/RubyWS/alpha-blog/app/views/articles/_form.html.erb",
 		"/Users/jeantovar/RubyWS/alpha-blog/app/models/article.rb",
 		"/Users/jeantovar/RubyWS/alpha-blog/config/routes.rb",
@@ -97,14 +152,104 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/jeantovar/RubyWS/alpha-blog/app/views/articles/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1240,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1229,
+								1229
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/jeantovar/RubyWS/alpha-blog/app/views/articles/edit.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/jeantovar/RubyWS/alpha-blog/app/views/articles/new.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 66,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"git_gutter_enabled": true,
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -137,7 +282,7 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "Packages/Ruby/Ruby.sublime-build",
+	"pinned_build_system": "",
 	"project": "",
 	"replace":
 	{
