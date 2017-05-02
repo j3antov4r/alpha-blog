@@ -1,0 +1,30 @@
+<% articles.each do |art| %>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+    <div class="well well-lg">
+      <div class="article-title">
+        <%= link_to art.title, article_path(art) %>
+      </div>
+      <div class="article-body">
+        <%= truncate(art.description, lenght: 100) %> 
+        <div class="article-meta-details">
+          <small>
+            Created by: <%= art.user.username if art.user %>, 
+                    <%= time_ago_in_words(art.created_at) %> ago,
+                    Last updated: <%= time_ago_in_words(art.updated_at)%> ago
+          </small> 
+        </div>
+        
+      </div>
+      <div class="article-actions">
+        <%= link_to "Edit this article", edit_article_path(art), class: "btn btn-xs btn-primary" %> | 
+        <%= link_to "Delete this article", article_path(art), 
+                                      method: :delete, 
+                                      data: {confirm: "Are you sure you want to delete this article?" }, 
+                                       class: "btn btn-xs btn-danger" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <% end %>
