@@ -1,2 +1,9 @@
  <h1 align="center">Lista de Articulos</h1>
- <%= render 'article' %>
+ <div class="center">
+ 	<%= will_paginate %>
+ </div>
+ <%= render 'article', articles: @articles %>
+ <div class="center">
+ 	<%= will_paginate%>
+ </div>
+ 
