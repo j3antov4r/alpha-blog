@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 	
-	has_many :articles 
+	has_many :articles, dependent: :destroy  
 
 	#esto se procesa antes de guardar en BD
   before_save {self.email = email.downcase}
