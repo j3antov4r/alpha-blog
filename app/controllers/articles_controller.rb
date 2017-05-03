@@ -1,5 +1,8 @@
 class ArticlesController < ApplicationController
+  #los before_action se ejecutan en el orden que se definen
   before_action :set_article, only: [:show, :edit, :destroy, :update] 
+  before_action :require_user, except: [:index, :show]
+  before_action :require_same_user, only: [:edit, :update, :destroy]
   
   def new
     @article = Article.new
@@ -55,5 +58,12 @@ class ArticlesController < ApplicationController
   
   def article_params
     params.require(:article).permit(:title, :description)
+  end
+
+  def require_same_user
+    if current_user != @article.user
+      flash[:danger] = "You can only edit or delete your own articles"
+      redirect_to root_path
+    end
   end
 end
