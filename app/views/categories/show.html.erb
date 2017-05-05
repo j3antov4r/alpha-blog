@@ -1,7 +1,8 @@
-<h1 class="center">Category Info </h1>
-<div class="row">
-	<div class="col-md-4 col-md-offset-4 center">
-		<%= @category.name %>
-	</div>
+<h1 class="center">Category:  <%= @category.name %></h1>
+<div class="center">
+	<%= will_paginate @category_articles %>
 </div>
-<h4 class="center">Created at <%= @category.created_at %> </h4>
+<%= render 'articles/article', articles: @category_articles %>
+<div class="center">
+	<%= will_paginate @category_articles %>
+</div>

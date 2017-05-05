@@ -56,8 +56,9 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
   
+  #se agrega un ajuste para recibir los checkboxes de catgorias como un arreglo
   def article_params
-    params.require(:article).permit(:title, :description)
+    params.require(:article).permit(:title, :description, category_ids: [])
   end
 
   def require_same_user
